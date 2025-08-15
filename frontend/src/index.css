@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root{
+    --primary-color: #B53325;
+    --secondary-color: #fffcfc;
+    --border-color: #C6CBB2;
+    --text-black-color: #000000;
+}
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+}

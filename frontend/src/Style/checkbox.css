@@ -1,0 +1,55 @@
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 24px; /* espaço pro ícone da checkbox */
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Esconde a checkbox original */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Aparência do quadrado */
+.checkmark {
+  position: absolute;
+  left: 0;
+  top: -12px;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border: 2px solid #999;
+  border-radius: 4px; /* deixar arredondada */
+  transition: 0.2s;
+}
+
+/* Quando passar o mouse */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ddd;
+}
+
+
+/* Checkmark (✓) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Estilo do ✓ */
+.checkbox-container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid rgb(0, 0, 0);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
