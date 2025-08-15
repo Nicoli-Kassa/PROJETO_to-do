@@ -89,13 +89,6 @@ npm start
 
 ---
 
-## Customização da Barra de Rolagem
-
-A barra de rolagem foi estilizada via CSS em `frontend/src/Style/scrollbar.css`.  
-Você pode alterar cores e estilos conforme sua preferência.
-
----
-
 ## Contribuição
 
 1. Fork este repositório
